@@ -1,0 +1,11 @@
+query_name,query,total_available,retrieved
+mhealth_core,"(""mHealth""[Title/Abstract] OR ""m-health""[Title/Abstract]) AND 2018:2026[dp] AND hasabstract[text]",13016,250
+mobile_health,"""mobile health""[Title/Abstract] AND 2018:2026[dp] AND hasabstract[text]",11847,250
+mobile_health_apps,"(""mobile health application""[Title/Abstract] OR ""mobile health app""[Title/Abstract]) AND 2018:2026[dp] AND hasabstract[text]",973,250
+smartphone_health,"(""smartphone health""[Title/Abstract] OR ""smartphone-based health""[Title/Abstract] OR ""smartphone health monitoring""[Title/Abstract]) AND 2018:2026[dp] AND hasabstract[text]",84,84
+mobile_healthcare,"""mobile healthcare""[Title/Abstract] AND 2018:2026[dp] AND hasabstract[text]",235,235
+digital_health_mobile,"""digital health""[Title/Abstract] AND (mobile[Title/Abstract] OR smartphone[Title/Abstract] OR app[Title/Abstract]) AND 2018:2026[dp] AND hasabstract[text]",6076,250
+wearable_health,"(""wearable health""[Title/Abstract] OR ""wearable health technology""[Title/Abstract] OR ""wearable health device""[Title/Abstract]) AND 2018:2026[dp] AND hasabstract[text]",622,250
+remote_patient_monitoring,"""remote patient monitoring""[Title/Abstract] AND (mobile[Title/Abstract] OR app[Title/Abstract] OR smartphone[Title/Abstract]) AND 2018:2026[dp] AND hasabstract[text]",305,250
+telemedicine_mobile,"(""telemedicine""[Title/Abstract] OR ""telehealth""[Title/Abstract]) AND (mobile[Title/Abstract] OR smartphone[Title/Abstract] OR app[Title/Abstract]) AND 2018:2026[dp] AND hasabstract[text]",5042,250
+health_monitoring_apps,"""health monitoring""[Title/Abstract] AND (app[Title/Abstract] OR application[Title/Abstract] OR smartphone[Title/Abstract]) AND 2018:2026[dp] AND hasabstract[text]",1888,250

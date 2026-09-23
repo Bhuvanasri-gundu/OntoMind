@@ -1,0 +1,53 @@
+============================================================
+DATA QUALITY ANALYSIS REPORT
+============================================================
+
+Dataset: E:\MAJOR PROJECT\data\processed\mhealth_final_cleaned_dataset.csv
+Total papers: 2628
+Columns: ['pmid', 'title', 'abstract', 'year', 'mesh_terms', 'journal', 'authors', 'doi', 'document', 'cleaned_text', 'source', 'abstract_len', 'doc_len', 'doc_word_count']
+
+--- Missing Values ---
+      Column  Null Count  Null %  Empty String Count  Empty %  Total Missing  Total Missing %
+        pmid           0    0.00                   0      0.0              0             0.00
+       title           0    0.00                   0      0.0              0             0.00
+    abstract           0    0.00                   0      0.0              0             0.00
+        year         491   18.68                   0      0.0            491            18.68
+  mesh_terms        1004   38.20                   0      0.0           1004            38.20
+     journal         499   18.99                   0      0.0            499            18.99
+     authors         493   18.76                   0      0.0            493            18.76
+         doi         524   19.94                   0      0.0            524            19.94
+    document           0    0.00                   0      0.0              0             0.00
+cleaned_text           0    0.00                   0      0.0              0             0.00
+      source           0    0.00                   0      0.0              0             0.00
+
+--- Duplicates ---
+Duplicate PMIDs: 0
+
+--- Abstract Quality ---
+Papers without abstracts: 0
+Very short abstracts (<200 chars): 5
+Mean abstract length: 1713 chars
+
+--- Year Coverage ---
+  2012.0: 6
+  2018.0: 107
+  2019.0: 138
+  2020.0: 212
+  2021.0: 233
+  2022.0: 316
+  2023.0: 349
+  2024.0: 366
+  2025.0: 284
+  2026.0: 126
+
+--- MeSH Terms ---
+With MeSH: 1624 (61.8%)
+Without MeSH: 1004 (38.2%)
+
+--- Document Quality ---
+Mean word count: 253
+Very short docs (<50 words): 14
+
+--- OVERALL ASSESSMENT ---
+Dataset is in good condition for downstream processing.
+Issues found: 14 very short documents

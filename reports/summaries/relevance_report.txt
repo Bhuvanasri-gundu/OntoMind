@@ -1,0 +1,115 @@
+============================================================
+RELEVANCE FILTERING REPORT
+Date: 2026-08-29 16:15:36
+============================================================
+
+Total papers analyzed: 2628
+
+Relevance Distribution:
+  Highly relevant: 234 (8.9%)
+  Relevant: 593 (22.6%)
+  Possibly relevant: 923 (35.1%)
+  Low relevance: 878 (33.4%)
+
+Final relevant dataset: 1750 papers
+Removed (low relevance): 878 papers
+
+Relevance Score Statistics:
+  Mean:   0.411
+  Median: 0.397
+  Std:    0.193
+  Min:    0.036
+  Max:    1.000
+
+============================================================
+EXAMPLES FROM EACH CATEGORY
+============================================================
+
+--- Highly relevant (showing up to 3 examples) ---
+  PMID: 40673359
+  Title: Effectiveness of recommendations in promoting the use of mobile health applications in health guidan...
+  Score: 0.878
+  Reason: Strong keyword match (1.00); Good MeSH alignment (1.00); Good semantic similarity (0.59)
+
+  PMID: 38426885
+  Title: Reducing the Environmental Impact of Digital Health: Development of an Ecoscore for Health Apps....
+  Score: 0.781
+  Reason: Strong keyword match (0.92); Good MeSH alignment (1.00); Good semantic similarity (0.38)
+
+  PMID: 39377400
+  Title: HealthCheck: A method for evaluating persuasive mobile health applications....
+  Score: 0.797
+  Reason: Strong keyword match (1.00); Good MeSH alignment (1.00); Good semantic similarity (0.32)
+
+
+--- Relevant (showing up to 3 examples) ---
+  PMID: 37610798
+  Title: A Nurse-Led Care Delivery App and Telehealth System for Patients Requiring Wound Care: Mixed Methods...
+  Score: 0.522
+  Reason: Strong keyword match (0.76); No MeSH terms available; Good semantic similarity (0.23)
+
+  PMID: 42007033
+  Title: A Real-Time, Location-Aware Remote Patient Monitoring System for Telemedicine Decision Support....
+  Score: 0.602
+  Reason: Strong keyword match (0.76); No MeSH terms available; Good semantic similarity (0.49)
+
+  PMID: 31972762
+  Title: Acceptability and Feasibility of a Mobile Health Application for Video Directly Observed Therapy of ...
+  Score: 0.648
+  Reason: Strong keyword match (1.00); MeSH score: 0.50; Good semantic similarity (0.33)
+
+
+--- Possibly relevant (showing up to 3 examples) ---
+  PMID: 40545207
+  Title: A mobile relational agent to enhance atrial fibrillation self-care: Primary and secondary outcomes o...
+  Score: 0.382
+  Reason: Weak keyword match (0.08); Good MeSH alignment (1.00); Good semantic similarity (0.17)
+
+  PMID: 38416388
+  Title: A Mobile App-based Approach in Cardiovascular Disease Prevention: A Prospective Randomized Study....
+  Score: 0.393
+  Reason: Weak keyword match (0.08); Good MeSH alignment (1.00); Good semantic similarity (0.20)
+
+  PMID: 40215401
+  Title: Evaluating User Experience and Satisfaction in a Concussion Rehabilitation App: Usability Study....
+  Score: 0.448
+  Reason: Moderate keyword match (0.24); Good MeSH alignment (1.00); Good semantic similarity (0.17)
+
+
+--- Low relevance (showing up to 3 examples) ---
+  PMID: 42585496
+  Title: Acute respiratory viral diseases in Amazonas, Brazil: epidemiological patterns and implications for ...
+  Score: 0.185
+  Reason: Weak keyword match (0.16); MeSH score: 0.10; Good semantic similarity (0.30)
+
+  PMID: 32657221
+  Title: Predicting changes in performance due to cognitive fatigue: A multimodal approach based on speech mo...
+  Score: 0.132
+  Reason: Weak keyword match (0.16); MeSH score: 0.10; Low semantic similarity (0.13)
+
+  PMID: 33606553
+  Title: The Implementation and Acceptability of a Mobile Application for Screening for Atrial Fibrillation a...
+  Score: 0.290
+  Reason: Weak keyword match (0.08); Good MeSH alignment (0.70); Good semantic similarity (0.16)
+
+
+============================================================
+METHODOLOGY
+============================================================
+Relevance scoring uses three complementary signals:
+1. Keyword matching (40% weight)
+   - Weighted mHealth keyword presence in title and abstract
+   - Title matches weighted higher than abstract matches
+2. MeSH term matching (30% weight)
+   - Checks MeSH headings against mHealth-relevant terms
+   - Papers without MeSH terms receive neutral score (0.5)
+3. TF-IDF cosine similarity (30% weight)
+   - Computes similarity to mHealth reference description
+   - Uses bigrams and normalized TF-IDF vectors
+
+LIMITATIONS:
+- Keyword lists may not capture all mHealth subdomains
+- MeSH terms are missing for ~50% of papers (neutral scored)
+- TF-IDF similarity depends on vocabulary overlap
+- Borderline papers (score ~0.3) need manual review
+- The system may under-score novel mHealth applications

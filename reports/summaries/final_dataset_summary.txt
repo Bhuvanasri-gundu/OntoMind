@@ -1,0 +1,23 @@
+============================================================
+FINAL DATASET SUMMARY REPORT
+Project: Ontology-Guided Hypothesis Generation Using LLMs
+         and Topic Modeling in mHealth Research
+Date: 2026-08-29
+============================================================
+
+PIPELINE OVERVIEW
+----------------------------------------
+Step 1: Original dataset:          491 papers
+Step 2: Expanded collection:        2177 papers
+Step 3: After merge + dedup:         2628 papers
+Step 4: After relevance filtering:   1750 papers
+Step 5: Low relevance removed:       878 papers
+Step 6: Final relevant dataset:      1750 papers
+
+FINAL DATASET
+----------------------------------------
+File: data/processed/mhealth_relevant_dataset.csv
+Papers: 1750
+Columns: ['pmid', 'title', 'abstract', 'year', 'mesh_terms', 'journal', 'authors', 'doi', 'document', 'cleaned_text', 'source', 'keyword_score', 'matched_keywords', 'mesh_score', 'matched_mesh', 'tfidf_score', 'relevance_score', 'relevance_category', 'relevance_reason']
+
+READINESS: Dataset is ready for TF-IDF keyword extraction.

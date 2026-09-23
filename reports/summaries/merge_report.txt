@@ -1,0 +1,47 @@
+============================================================
+MERGE AND DEDUPLICATION REPORT
+Date: 2026-08-29 16:15:24
+============================================================
+
+Original dataset: 491 papers
+  File: E:\MAJOR PROJECT\data\raw\mhealth_pubmed_original_491.csv
+  Columns: ['pmid', 'title', 'abstract', 'year', 'mesh_terms', 'source']
+
+Newly collected dataset: 2177 papers
+  File: E:\MAJOR PROJECT\data\raw\pubmed_expanded_20260829.csv
+
+Total after merge (before dedup): 2668
+
+Duplicates removed by PMID: 22
+Duplicates removed by title: 4
+Papers removed (missing title/abstract): 1
+Papers removed (short abstracts < 100 chars): 13
+
+============================================================
+FINAL SUMMARY
+============================================================
+Original dataset:           491 papers
+Newly collected:            2177 papers
+Total before dedup:         2668 papers
+PMID duplicates removed:    22
+Title duplicates removed:   4
+Missing title/abstract:     1
+Short abstracts removed:    13
+Final cleaned dataset:      2628 papers
+
+Columns: ['pmid', 'title', 'abstract', 'year', 'mesh_terms', 'journal', 'authors', 'doi', 'document', 'cleaned_text', 'source']
+
+Year distribution:
+  2012: 6
+  2018: 107
+  2019: 138
+  2020: 212
+  2021: 233
+  2022: 316
+  2023: 349
+  2024: 366
+  2025: 284
+  2026: 126
+
+Papers with MeSH terms: 1624
+Papers without MeSH terms: 1004
